@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}?v={% now 'U' %}">
+</head>
+
+<body>
+    <header class="the_header">
+        <br></br>
+        <br></br>
+        <h1 class="the_h1">Your Tasks</h1>
+    </header>
+    <main>
+        <div class="task-container">
+
+
+
+
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="add_button the_button">Add</button>
+            </form>
+
+            <button class="back_button grow-btn" onclick="window.location.href='{% url 'task' %}'"
+               >Back to Task List</button>
+
+
+        </div>
+</body>
+
+</html>

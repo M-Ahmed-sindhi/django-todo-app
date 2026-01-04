@@ -1,0 +1,21 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore SQLite database file
+db.sqlite3
+
+# Ignore static files collected by Django
+staticfiles/
+
+# Ignore local environment variables
+.env
+
+# OS
+.DS_Store
+
