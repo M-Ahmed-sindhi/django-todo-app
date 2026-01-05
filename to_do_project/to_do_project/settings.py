@@ -9,7 +9,7 @@ SECRET_KEY = os.environ.get(
     "unsafe-secret-key-for-local-dev"
 )
 
-DEBUG = os.environ.get("DEBUG", "False") == "True"
+DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = [
     "localhost",
