@@ -1,7 +1,6 @@
-asgiref      ==     3.11.0
-Django         ==   4.2.27
-pip          ==     25.3
-setuptools    ==    58.0.4
-sqlparse     ==     0.5.5
-typing_extensions ==4.15.0
-white        ==    0.1.2
+asgiref==3.11.0
+Django==4.2.27
+whitenoise==6.7.0  # CHANGED: white -> whitenoise
+gunicorn==21.2.0   # ADD: for production server
+psycopg2-binary==2.9.9  # ADD: for PostgreSQL on Render
+dj-database-url==2.0.0  # ADD: for database configuration
