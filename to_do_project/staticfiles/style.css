@@ -123,23 +123,8 @@ body {
 .delete-button {
   background-color: #ff4444;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
   align-items: center;
-}
-
-.messages {
-  font-size: 16px;
-  color: green;
-  margin-bottom: 20px;
-  text-align: center;
-
-} 
-
-.main-message {
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #f9f9f9;
 }
 @media (max-width: 480px) {
   .task-container {
@@ -152,7 +137,7 @@ body {
     padding-right: 10px;
     background: white;
     position: relative;
-
+    
   }
   
   
